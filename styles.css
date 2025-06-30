@@ -1,0 +1,206 @@
+/* Base setup */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #121212;
+  color: #f4f4f4;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Flex wrapper to keep footer at bottom */
+body.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1a1a1a;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  color: #7ec8ff;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #7ec8ff;
+}
+
+/* Hero section for index.html */
+.hero {
+  flex: 1;
+  background-image: url('forest.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  max-width: 700px;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #7ec8ff;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  min-width: 180px;
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #388e3c;
+}
+
+/* About page layout */
+.about-content {
+  flex: 1;
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  line-height: 1.8;
+}
+
+.about-content h1 {
+  font-size: 3rem;
+  color: #7ec8ff;
+  margin-bottom: 1rem;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  color: #4caf50;
+  margin-top: 2rem;
+}
+
+.about-content ul {
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.about-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: #7ec8ff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  font-family: 'Roboto', sans-serif;
+  margin-top: auto;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.7);
+  width: 100%;
+}
+.contact-content {
+  flex: 1;
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  color: #f4f4f4;
+}
+
+.contact-content h1 {
+  font-size: 3rem;
+  color: #7ec8ff;
+  margin-bottom: 2rem;
+}
+
+.contact-form label {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #7ec8ff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background-color: #222;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  color: #f4f4f4;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  font-family: 'Roboto', sans-serif;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #7ec8ff;
+  outline: none;
+}
+
+.contact-form button.btn {
+  background-color: #4caf50;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.contact-form button.btn:hover {
+  background-color: #388e3c;
+}

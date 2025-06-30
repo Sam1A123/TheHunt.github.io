@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - The Hunt</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;500&display=swap" rel="stylesheet" />
+</head>
+<body class="flex-wrapper">
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">The Hunt</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="play.html">Play</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container contact-content">
+    <h1>Contact Us</h1>
+    <form action="https://formsubmit.co/TheHuntBusinessInquiries@gmail.com" method="POST" class="contact-form" novalidate>
+      <input type="hidden" name="_captcha" value="false">
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required autocomplete="name" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required autocomplete="email" />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 The Hunt. All rights reserved.
+  </footer>
+</body>
+</html>

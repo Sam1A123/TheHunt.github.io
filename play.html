@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Play - The Hunt</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;500&display=swap" rel="stylesheet" />
+  <style>
+    .game-frame {
+      width: 100%;
+      height: 90vh;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(126, 200, 255, 0.6);
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body class="flex-wrapper">
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">The Hunt</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="play.html" class="active" aria-current="page">Play</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <iframe
+      src="https://play.unity.com/en/games/e8dcb57e-22f4-4984-a5d6-e73a3994e474/hunt-beta"
+      class="game-frame"
+      allowfullscreen
+      loading="lazy"
+      title="The Hunt Unity Game">
+    </iframe>
+  </main>
+
+  <footer>
+    &copy; 2025 The Hunt. All rights reserved.
+  </footer>
+</body>
+</html>
